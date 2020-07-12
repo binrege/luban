@@ -85,6 +85,21 @@ export default {
   },
   methods: {
     getData() {
+      //post传参
+      // const useronfo={
+      //   username:"lb"
+
+      // }
+      // this.$api
+      //   .addAd(useronfo)
+      //   .then(res => {
+      //    //响应结果
+      //    console.log(res);
+      //   })
+      //   .catch(err => {
+      //     console.log(err);
+      //   });
+      //get
       this.$api
         .getAllAd()
         .then(res => {
