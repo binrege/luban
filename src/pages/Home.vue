@@ -40,7 +40,7 @@ export default {
   },
   mounted() {
     // this.getMenus()
-    this.getData();
+    // this.getData();
   },
   watch: {},
   computed: {}

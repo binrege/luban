@@ -36,11 +36,24 @@ export default {
         return service.get('/course/findCatalogById')
     },
 
-    //查询所有老师/teacher/findAll  
+    //查询所有老师
       getfindAllCombo(){
         return service.get('/teacher/findAll')
     },
 
+    //查询课程子类类型
+    findChildType(){
+        return service.get('/courseType/findChildType')
+    },
+     //查询课程父类类型
+    findCourseType(){
+        return service.get('/courseType/findCourseType')
+    },
 
+    // 查询课程
+    findCourse(){
+            return service.get('/course/findCourse')
+     },
+    
     //end jfy
 }
