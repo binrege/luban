@@ -19,6 +19,19 @@ const routes = [{
                 component: () =>
                     import ('../pages/class.vue') //本地地址
             },
+            {
+                path: '/shizi',  //要跳转的路径
+                name: 'shizi',   //同上
+                component: () =>
+                    import ('../pages/shizi.vue')  //本地地址
+            },
+            {
+                path: '/taochan',  //要跳转的路径
+                name: 'taochan',   //同上
+                component: () =>
+                    import ('../pages/taochan.vue')  //本地地址
+            },
+           
 
         ]
     },

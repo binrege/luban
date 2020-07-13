@@ -44,7 +44,7 @@ export default {
     },
 
     //查询所有老师
-    getfindAllCombo() {
+    getfindAll() {
         return service.get('/teacher/findAll')
     },
 
@@ -58,9 +58,11 @@ export default {
     },
 
     // 查询课程
-    findCourse() {
-        return service.get('/course/findCourse')
-    },
+    findCourse(){
+            return service.get('/course/findCourse')
+     },
+    
 
+  
     //end jfy
 }
