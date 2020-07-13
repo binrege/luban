@@ -86,6 +86,5 @@ export default {
 
 
 
->>>>>>> 018a87a689ec5a3d4b77f9fcdf0b5a27ed8d58ce
     //end jfy
 }
