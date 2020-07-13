@@ -55,5 +55,9 @@ export default {
             return service.get('/course/findCourse')
      },
     
+     findAll(){
+        return service.post('/teacher/findAll')
+    },
+  
     //end jfy
 }
