@@ -49,8 +49,8 @@ export default {
     },
 
     //查询课程子类类型
-    findChildType() {
-        return service.get('/courseType/findChildType')
+    findChildType(typeId) {
+        return service.get(`/courseType/findChildType?typeId=${typeId}`)
     },
     //查询课程父类类型
     findCourseType() {
@@ -58,11 +58,21 @@ export default {
     },
 
     // 查询课程
-    findCourse(){
-            return service.get('/course/findCourse')
-     },
-    
+    findCourse(params) {
+        if (params.length === 0 || params[0] === 0) {
+            return service.get(`/course/findCourse`)
+        } else if (params.length === 1) {
+            return service.get(`/course/findCourse?courseTypeIds=${params[0]}`)
+        } else if (params.length === 2) {
+            if (params[1] === 0) {
+                return service.get(`/course/findCourse?courseTypeIds=${params[0]}`)
+            } else {
+                return service.get(`/course/findCourse?courseTypeIds=${params[0]}&courseTypeIds=${params[1]}`)
+            }
+        }
+    },
 
-  
+
+
     //end jfy
 }

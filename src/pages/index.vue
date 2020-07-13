@@ -101,13 +101,6 @@
       <div class>
         <img src="../assets/images/1591362192716334.jpg" alt="鲁班学院" style="width: 100%;" />
       </div>
-      <footer>
-        <div class="foot">
-          <span>版权所有 © 2017 湖南鲁班教育科技有限公司</span>
-          <span>湘ICP备17008427号-1</span>
-          <a href="#">网站地址</a>
-        </div>
-      </footer>
     </div>
   </div>
 </template>
