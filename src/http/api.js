@@ -14,6 +14,8 @@ export default {
     },
 
     //jfy
+
+    //首页
     //查询所有的套餐/精品套餐
     getfindAllCombo() {
         return service.get('/combo/findAllCombo')
@@ -26,6 +28,11 @@ export default {
     getAllHotInfo() {
         return service.get('/infos/getAllHotInfo')
     },
+
+
+
+    //
+
     //根据资讯类别获取对应的资讯
     getInfoByInfoType() {
         return service.get('/infos/getInfoByInfoType')
@@ -42,8 +49,8 @@ export default {
     },
 
     //查询课程子类类型
-    findChildType() {
-        return service.get('/courseType/findChildType')
+    findChildType(typeId) {
+        return service.get(`/courseType/findChildType?typeId=${typeId}`)
     },
     //查询课程父类类型
     findCourseType() {
@@ -51,9 +58,8 @@ export default {
     },
 
     // 查询课程
-    findCourse(){
-            return service.get('/course/findCourse')
-     },
+
+ 
     
      findAllCombo(){
         return service.get('/combo/findAllCombo')
@@ -63,5 +69,23 @@ export default {
         return service.get('/infos/getInfoByInfoType')
     },
     
+
+    findCourse(params) {
+        if (params.length === 0 || params[0] === 0) {
+            return service.get(`/course/findCourse`)
+        } else if (params.length === 1) {
+            return service.get(`/course/findCourse?courseTypeIds=${params[0]}`)
+        } else if (params.length === 2) {
+            if (params[1] === 0) {
+                return service.get(`/course/findCourse?courseTypeIds=${params[0]}`)
+            } else {
+                return service.get(`/course/findCourse?courseTypeIds=${params[0]}&courseTypeIds=${params[1]}`)
+            }
+        }
+    },
+
+
+
+>>>>>>> 018a87a689ec5a3d4b77f9fcdf0b5a27ed8d58ce
     //end jfy
 }

@@ -5,6 +5,9 @@
 <div>
   <router-view></router-view>
 </div>
+<div>
+<fppters ></fppters>
+</div>
     </div>
   </div>
 </template>
@@ -13,10 +16,11 @@
 let Base64 = require("js-base64").Base64;
 
 import navs from "../components/nav"
+import fppters from "../components/footer"
 export default {
   name: "",
   props: {},
-  components: {navs},
+  components: {navs,fppters},
   data() {
     return {
       msg: "我是home组件的数据"

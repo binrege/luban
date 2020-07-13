@@ -2,65 +2,71 @@
   <div>
     <div class="main">
       <div class="main-first" style="width: 1180px;margin:0 auto;">
-       
-	    <ul class="pid">
-          <li class="active">全部</li>
-          <li v-for="(item,index) in fatherClassName" :key="index">{{item.courseTypeName}}</li>
+        <ul class="pid">
+          <li :class="activeindex===0? 'active':''" @click="clickItem(0)">全部</li>
+          <li
+            v-for="(item,index) in fatherClassName"
+            :key="index"
+            :class="activeindex===item.courseTypeId? 'active':''"
+            @click="clickItem(item)"
+          >{{item.courseTypeName}}</li>
         </ul>
 
-        <ul class="child">
-          <li class="active">全部</li>
-          <li>项目专题</li>
-          <li>上期课程</li>
-          <li>本期课程</li>
+        <ul class="child" v-if="childList.length>0">
+          <li  :class="activeindex2===0? 'active':''" @click="handleClick(0)">全部</li>
+          <li
+            v-for="(item,index) in childList"
+            :key="index"
+            :class="activeindex2===item.courseTypeId? 'active':''"
+            @click="handleClick(item)"
+          >{{item.courseTypeName}}</li>
         </ul>
-			<div class="main-sec">
-			<button>
-				价格
-				<div>
-				<i></i>
-				<i></i>
-				</div>
-			</button>
-			<button>
-				热度
-				<div>
-				<i></i>
-				<i></i>
-				</div>
-			</button>
-			</div>
-   
+        <div class="main-sec">
+          <button>
+            价格
+            <div>
+              <i></i>
+              <i></i>
+            </div>
+          </button>
+          <button>
+            热度
+            <div>
+              <i></i>
+              <i></i>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="main-thrid" v-if="CourseList.length>0">
+        <div class="c"  v-for="(item,index) in CourseList" :key="index">
+          <div class="top">
+            <dl>
+              <dt>
+                <div>
+                  <a href="#" target="_self">
+                    <img src="../assets/images/start.png" />
+                  </a>
+                </div>
+                <img :src="item.courseImage" />
+              </dt>
+              <dd>
+                {{item.courseName}}
+                <br />
+                <span>{{item.courseTypeName}}</span>
+              </dd>
+            </dl>
+          </div>
+          <div class="bottom">
+            <p>
+              ￥{{item.coursePrice}}
+              <span>{{item.stuNum}}人在学</span>
+            </p>
+          </div>
+        </div>
+      </div>
+	  <div class="main-thrid" v-else>暂无数据</div>
     </div>
-
-		<div class="main-thrid">
-		<div class="c">
-			<div class="top">
-			<dl>
-				<dt>
-				<div>
-					<a href="../assets/images/start.png" target="_self">
-					<img src="../assets/images/10.gif" />
-					</a>
-				</div>
-				<img src="../assets/images/start.png" />
-				</dt>
-				<dd>
-				【鲁班学院】ZooKeeper专题
-				<br />
-				<span>vip课程系列</span>
-				</dd>
-			</dl>
-			</div>
-			<div class="bottom">
-			<p>
-				￥7580.00
-				<span>3946人在学</span>
-			</p>
-			</div>
-		</div>
-		</div>
-  </div>
 
     <div class="footer">
       <div class="tex">
@@ -79,7 +85,12 @@ export default {
   data() {
     return {
       fatherClassName: null,
-      ChildClassName: null
+      ChildClassName: null,
+      activeindex: 0,
+      activeindex2: 0,
+	  childList: [],
+	  params:[],
+	  CourseList:[]
     };
   },
   components: {},
@@ -87,9 +98,35 @@ export default {
   // 生命周期 - 载入后, Vue 实例挂载到实际的 DOM 操作完成，一般在该过程进行 Ajax 交互
   mounted() {
     this.findCourseType(); //调用方法 ,记到加this
-    this.findChildType();
+    this.findCourse(this.params);
   },
   methods: {
+    handleClick(item) {
+      if (item) {
+        console.log(item);
+        this.activeindex2 = item.courseTypeId;
+        // this.findChildType(item.courseTypeId);
+      } else {
+        this.activeindex = 0;
+        // this.findChildType(0);
+	  }
+		this.params.splice(1,1,this.activeindex2)
+		console.log(this.params);
+	  this.findCourse(this.params)
+	},
+	findCourse(params){
+		 this.$api //不变
+        .findCourse(params) //接口的名字
+        .then(res => {
+          //   console.log(JSON.parse(Base64.decode(res)))
+          console.log(res);
+		  this.CourseList = res.t.list;
+		  console.log(this.CourseList);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+	},
     findCourseType() {
       //自己命名  ,对应上面的数据
       this.$api //不变
@@ -103,14 +140,26 @@ export default {
           console.log(err);
         });
     },
-
-    findChildType() {
+    clickItem(item) {
+      if (item) {
+        console.log(item);
+        this.activeindex = item.courseTypeId;
+        this.findChildType(item.courseTypeId);
+      } else {
+        this.activeindex = 0;
+	  }
+	  this.activeindex2=0
+	  this.params=[]
+	  this.params.push(this.activeindex)
+	  this.findCourse(this.params)
+    },
+    findChildType(typeId) {
       this.$api //不变
-        .findChildType() //接口的名字
+        .findChildType(typeId) //接口的名字
         .then(res => {
           //   console.log(JSON.parse(Base64.decode(res)))
           console.log(res);
-          this.ChildClassName = res.t;
+          this.childList = res.t;
         })
         .catch(err => {
           console.log(err);
@@ -161,7 +210,7 @@ img {
   padding-top: 19px;
 }
 .main .main-first {
-  height: 220px;
+//   height: 220px;
 }
 .main .main-first .pid {
   padding-bottom: 24px;
@@ -215,7 +264,7 @@ img {
 }
 .main .main-first .main-sec {
   display: flex;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .main .main-first .main-sec button {
   position: relative;
@@ -262,9 +311,11 @@ img {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+
   margin-bottom: 63px;
+  >div{
+	  margin-right: 16px;
+  }
 }
 
 .main .main-thrid .c {
