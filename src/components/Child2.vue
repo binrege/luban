@@ -1,6 +1,9 @@
 <template>
  <div>
-
+   <!-- 轮播 -->
+   <div>
+     
+   </div>
  </div>
 </template>
 

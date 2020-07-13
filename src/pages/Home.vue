@@ -23,10 +23,10 @@ export default {
     };
   },
   methods: {
-    send() {
-      this.$bus.$emit("send", this.msg);
-      this.$router.push("/login");
-    },
+    // send() {
+    //   this.$bus.$emit("send", this.msg);
+    //   this.$router.push("/login");
+    // },
     getData() {
       this.$api
         .getAllAd()
