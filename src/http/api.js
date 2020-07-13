@@ -37,8 +37,8 @@ export default {
     },
 
     //查询所有老师
-    getfindAll() {
-        return service.get('/teacher/findAll')
+    findAll() {
+        return service.post('/teacher/findAll')
     },
 
     //查询课程子类类型
@@ -55,7 +55,13 @@ export default {
             return service.get('/course/findCourse')
      },
     
-
-  
+     findAllCombo(){
+        return service.get('/combo/findAllCombo')
+    },
+    //根据资讯类别获取对应的资讯
+    getInfoByInfoType(){
+        return service.get('/infos/getInfoByInfoType')
+    },
+    
     //end jfy
 }

@@ -31,7 +31,13 @@ const routes = [{
                 component: () =>
                     import ('../pages/taochan.vue')  //本地地址
             },
-           
+            {
+                path: '/information',  //要跳转的路径
+                name: 'information',   //同上
+                component: () =>
+                    import ('../pages/information.vue')  //本地地址
+            },
+    
 
         ]
     },

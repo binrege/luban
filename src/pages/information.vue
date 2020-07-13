@@ -19,7 +19,7 @@
             <li>
               <a href="#">
                 <div class="fl">
-                  <img src="../img/list1.jpg" alt />
+                  <img src="../assets/images/list2.jpg" alt />
                 </div>
                 <div class="fr">
                   <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
@@ -49,7 +49,7 @@
             <li>
               <a href="#">
                 <div class="fl">
-                  <img src="../img/list2.jpg" alt />
+                  <img src="../assets/images/list2.jpg" alt />
                 </div>
                 <div class="fr">
                   <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
@@ -64,52 +64,7 @@
             <li>
               <a href="#">
                 <div class="fl">
-                  <img src="../img/list2.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list2.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list2.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list2.jpg" alt />
+                  <img src="../assets/images/list2.jpg" alt />
                 </div>
                 <div class="fr">
                   <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
@@ -139,7 +94,7 @@
             <li>
               <a href="#">
                 <div class="fl">
-                  <img src="../img/list3.jpg" alt />
+                  <img src="../assets/images/list3.jpg" alt />
                 </div>
                 <div class="fr">
                   <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
@@ -151,100 +106,11 @@
                 </div>
               </a>
             </li>
+
             <li>
               <a href="#">
                 <div class="fl">
-                  <img src="../img/list3.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list3.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list3.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list3.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list3.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list3.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list3.jpg" alt />
+                  <img src="../assets/images/list3.jpg" alt />
                 </div>
                 <div class="fr">
                   <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
@@ -259,6 +125,7 @@
           </ul>
         </div>
       </section>
+
       <section>
         <div class="tittle">
           <div class="fl">
@@ -274,7 +141,7 @@
             <li>
               <a href="#">
                 <div class="fl">
-                  <img src="../img/list4.jpg" alt />
+                  <img src="../assets/images/list4.jpg" alt />
                 </div>
                 <div class="fr">
                   <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
@@ -289,97 +156,7 @@
             <li>
               <a href="#">
                 <div class="fl">
-                  <img src="../img/list4.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list4.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list4.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list4.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list4.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list4.jpg" alt />
-                </div>
-                <div class="fr">
-                  <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
-                  <h5>2020年5月，在经过将近半年腾讯课堂对学院进行的就业率、提薪率、考试通过率等...</h5>
-                  <p>
-                    2020/05/22
-                    <span>7</span>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="fl">
-                  <img src="../img/list4.jpg" alt />
+                  <img src="../assets/images/list4.jpg" alt />
                 </div>
                 <div class="fr">
                   <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
@@ -394,6 +171,7 @@
           </ul>
         </div>
       </section>
+
       <section>
         <div class="tittle">
           <div class="fl">
@@ -409,7 +187,7 @@
             <li>
               <a href="#">
                 <div class="fl">
-                  <img src="../img/list5.jpg" alt />
+                  <img src="../assets/images/list4.jpg" alt />
                 </div>
                 <div class="fr">
                   <h4>【鲁班学院】架构新起航——鲁班学院荣获腾讯课堂【严选课程】</h4>
@@ -424,15 +202,10 @@
           </ul>
         </div>
       </section>
+
     </main>
-    
-    <footer>
-      <p>
-        版权所有 © 2017 湖南鲁班教育科技有限公司
-        <span>湘ICP备17008427号-1</span>
-        <a href="#">网站地图</a>
-      </p>
-    </footer>
+
+
   </div>
 </template>
 
@@ -440,13 +213,31 @@
 export default {
   name: "",
   data() {
-    return {};
+    return {
+      getInfoType:null,
+    };
   },
   components: {},
   props: {},
   // 生命周期 - 载入后, Vue 实例挂载到实际的 DOM 操作完成，一般在该过程进行 Ajax 交互
-  mounted() {},
-  methods: {},
+  mounted() {
+    this.getInfoByInfoType();
+  },
+  methods: {
+getInfoByInfoType() {
+      //自己命名  ,对应上面的数据
+      this.$api //不变
+        .getInfoByInfoType() //接口的名字
+        .then(res => {
+          console.log(JSON.parse(Base64.decode(res)))
+        
+          this.getInfoType = res.t;
+        })
+        .catch(err => {
+          console.log(err);
+        });}
+    
+  },
   // 生命周期 - 创建完成（可以访问当前this实例）
   created() {},
   watch: {},
@@ -465,7 +256,7 @@ export default {
   display: block;
   height: 240px;
   width: 1180px;
-  background: url(../img/banner.jpg) no-repeat;
+  background: url(../assets/images/banner.jpg) no-repeat;
 }
 main {
   width: 1180px;
@@ -556,7 +347,7 @@ main section .content ul li a .fr p span {
   position: relative;
   width: 25px;
   text-align: right;
-  background: url(../img/eye.jpg) no-repeat left center;
+  background: url(../assets/images/eye.jpg) no-repeat left center;
 }
 main section:nth-child(2) .tittle i {
   background-color: #67c23a;
