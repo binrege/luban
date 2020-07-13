@@ -14,10 +14,10 @@ const routes = [{
                     import ('../pages/index.vue')
             },
             {
-                path: '/class',  //要跳转的路径
-                name: 'class',   //同上
+                path: '/class', //要跳转的路径
+                name: 'class', //同上
                 component: () =>
-                    import ('../pages/class.vue')  //本地地址
+                    import ('../pages/class.vue') //本地地址
             },
 
         ]

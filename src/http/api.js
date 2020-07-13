@@ -14,6 +14,8 @@ export default {
     },
 
     //jfy
+
+    //首页
     //查询所有的套餐/精品套餐
     getfindAllCombo() {
         return service.get('/combo/findAllCombo')
@@ -26,6 +28,11 @@ export default {
     getAllHotInfo() {
         return service.get('/infos/getAllHotInfo')
     },
+
+
+
+    //
+
     //根据资讯类别获取对应的资讯
     getInfoByInfoType() {
         return service.get('/infos/getInfoByInfoType')
