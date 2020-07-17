@@ -4,7 +4,7 @@
       <img src="../assets/images/logo.jpg" />
       <!-- <img src="./img/logo.jpg"/> -->
     </div>
-    <div class="list" id="list">
+    <div class="list" v-if="!isSearch" id="list">
       <ul>
         <li class="head-nav-active">
           <router-link to="/">首页</router-link>
@@ -16,31 +16,31 @@
           <i></i>
         </li>
         <li>
-             <router-link to="/information">资讯</router-link>
+          <router-link to="/information">资讯</router-link>
           <i></i>
         </li>
         <li>
-             <router-link to="/wenda">问答</router-link>
+          <router-link to="/wenda">问答</router-link>
           <i></i>
         </li>
         <li>
-             <router-link to="/taochan">套餐</router-link>
+          <router-link to="/taochan">套餐</router-link>
           <i></i>
         </li>
         <li>
-             <router-link to="/shizi">师资</router-link>
+          <router-link to="/shizi">师资</router-link>
           <i></i>
         </li>
         <li>
-             <router-link to="/">关于我们</router-link>
+          <router-link to="/">关于我们</router-link>
           <i></i>
         </li>
         <li>
-             <router-link to="/cheng">学员成果</router-link>
+          <router-link to="/cheng">学员成果</router-link>
           <i></i>
         </li>
         <li>
-             <router-link to="/">【领取资料】</router-link>
+          <router-link to="/">【领取资料】</router-link>
           <i></i>
         </li>
         <!-- <li class="head-nav-active"><a href="#" >首页</a><i></i></li>
@@ -54,8 +54,13 @@
         <li><a href="#">【领取资料】</a><i></i></li>-->
       </ul>
     </div>
+    <div class="search list"  v-else>
+      <i class="el-icon-close" @click="closeSearch"></i>
+      <input type="text" name class="searchContent" placeholder="请输入搜索内容" />
+      <img src="../assets/images/list.png" alt />
+    </div>
     <div class="head-right">
-      <div class="head-search">
+      <div class="head-search" v-if="!isSearch" @click="searchClick">
         <img src="../assets/images/list.png" alt />
       </div>
       <div class="head-login">
@@ -69,7 +74,9 @@
 export default {
   name: "",
   data() {
-    return {};
+    return {
+      isSearch: false
+    };
   },
   components: {},
   props: {},
@@ -78,6 +85,12 @@ export default {
   methods: {
     go(path) {
       this.$router.push(path);
+    },
+    searchClick() {
+      this.isSearch = true;
+    },
+    closeSearch(){
+      this.isSearch = false;
     }
   },
   // 生命周期 - 创建完成（可以访问当前this实例）
@@ -171,5 +184,21 @@ body {
 }
 .head .head-login a {
   color: #303133;
+}
+.search {
+  width: 776px;
+  display: flex;
+  height: 70px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.searchContent {
+  border: none;
+  outline: none;
+  width: 400px;
+}
+i{
+  font-weight: 800;
+  font-size: 20px;
 }
 </style>

@@ -20,24 +20,30 @@ const routes = [{
                     import ('../pages/class.vue') //本地地址
             },
             {
-                path: '/shizi',  //要跳转的路径
-                name: 'shizi',   //同上
+                path: '/shizi', //要跳转的路径
+                name: 'shizi', //同上
                 component: () =>
-                    import ('../pages/shizi.vue')  //本地地址
+                    import ('../pages/shizi.vue') //本地地址
             },
             {
-                path: '/taochan',  //要跳转的路径
-                name: 'taochan',   //同上
+                path: '/taochan', //要跳转的路径
+                name: 'taochan', //同上
                 component: () =>
-                    import ('../pages/taochan.vue')  //本地地址
+                    import ('../pages/taochan.vue') //本地地址
             },
             {
-                path: '/information',  //要跳转的路径
-                name: 'information',   //同上
+                path: '/information', //要跳转的路径
+                name: 'information', //同上
                 component: () =>
-                    import ('../pages/information.vue')  //本地地址
+                    import ('../pages/information.vue') //本地地址
             },
-    
+            {
+                path: '/class-two', //要跳转的路径
+                name: 'class-two', //同上
+                component: () =>
+                    import ('../pages/class-two.vue') //本地地址
+            },
+
 
         ]
     },

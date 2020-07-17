@@ -15,10 +15,10 @@
             <p>更多</p>
           </div>
           <div class="list">
-            <dl v-for="(item,index) in hotCourse" :key="index">
+            <dl v-for="(item,index) in hotCourse" :key="index" @click="toDetail(item)">
               <dt>
                 <div>
-                  <a href="./html/class-two.html" target="_self">
+                 
                     <img src="img/start.png" />
                   </a>
                 </div>
@@ -123,6 +123,10 @@ export default {
     this.getData();
   },
   methods: {
+    toDetail(item){
+      this.$router.push({name:"class-two",params:{item}})
+
+    },
     getData() {
       //get
       this.$api
